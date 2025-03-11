@@ -38,13 +38,13 @@
 
         <header id="header" class="header fixed-top d-flex align-items-center">
 
-        <div class="d-flex align-items-center justify-content-between">
-  <a href="index.html" class="logo d-flex align-items-center">
-    <img src="{{ asset('img/logo.png') }}" alt="Logo">
-  </a>
-  <i class="bi bi-list toggle-sidebar-btn"></i>
-</div><!-- End Logo -->
-
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">CMISID ACMS</span>
+              </a>
+              <i class="bi bi-list toggle-sidebar-btn"></i>
+            </div><!-- End Logo -->
         
             <div class="search-bar">
               <form class="search-form d-flex align-items-center" method="POST" action="#">
@@ -275,36 +275,36 @@
         
               <li class="nav-item">
                 <a class="nav-link " href="{{ route('dashboard') }}">
-                  <i class="bi bi-grid-fill fs-4"></i>
+                  <i class="bi bi-grid"></i>
                   <span>Dashboard</span>
                 </a>
               </li><!-- End Dashboard Nav -->
         
               <li class="nav-item">
                 <a class="nav-link collapsed" href="{{ route('settings.users') }}">
-                  <i class="bi bi-people-fill fs-4"></i><span>Users</span>
+                  <i class="bi bi-people"></i><span>Users</span>
                 </a>
            
               </li><!-- End Components Nav -->
         
               <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-                  <i class="bi bi-file-person fs-4"></i><span>Candidates</span><i class="bi bi-chevron-down ms-auto"></i>
+                  <i class="bi bi-person-badge"></i><span>Candidates</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                   <li>
-                    <a href="forms-elements.html">
-                      <i class="bi bi-person-lines-fill fs-5"></i><span>Candidate List</span>
+                    <a href="{{ route('candidate.list') }}">
+                      <i class="bi bi-circle"></i><span>Candidate List</span>
                     </a>
                   </li>
                   <li>
-                    <a href="forms-layouts.html">
-                      <i class="bi bi-person-fill-add fs-5"></i><span>Add New Candidate</span>
+                    <a href="{{ route('candidate.add') }}">
+                      <i class="bi bi-circle"></i><span>Add New Candidate</span>
                     </a>
                   </li>
                   <li>
                     <a href="forms-editors.html">
-                      <i class="bi bi-person-fill-up fs-5"></i><span>Update Candidate</span>
+                      <i class="bi bi-circle"></i><span>Update Candidate</span>
                     </a>
                   </li>
                 </ul>
@@ -312,37 +312,37 @@
         
               <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                  <i class="bi bi-layout-text-window-reverse fs-4"></i><span>References</span><i class="bi bi-chevron-down ms-auto"></i>
+                  <i class="bi bi-layout-text-window-reverse"></i><span>References</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                   <li>
                     <a href="{{ route('references.skills') }}">
-                      <i class="bi bi-lightbulb-fill fs-5"></i><span>Skills</span>
+                      <i class="bi bi-circle"></i><span>Skills</span>
                     </a>
                   </li>
                   <li>
                     <a href="{{ route('references.positions') }}">
-                      <i class="bi bi-arrows-move fs-5"></i><span>Positions</span>
+                      <i class="bi bi-circle"></i><span>Positions</span>
                     </a>
                   </li>
                   <li>
-                    <a href="tables-data.html">
-                      <i class="bi bi-building-fill fs-5"></i><span>Offices</span>
+                    <a href="{{ route('references.offices') }}">
+                      <i class="bi bi-circle"></i><span>Offices</span>
                     </a>
                   </li>
                   <li>
-                    <a href="tables-data.html">
-                      <i class="bi bi-people-fill fs-5"></i><span>Priority Groups</span>
+                    <a href="{{ route('references.prioritygroups') }}">
+                      <i class="bi bi-circle"></i><span>Priority Groups</span>
                     </a>
                   </li>
                   <li>
-                    <a href="tables-data.html">
-                      <i class="bi bi-geo-alt-fill fs-5"></i><span>Venues</span>
+                    <a href="{{ route('references.venues') }}">
+                      <i class="bi bi-circle"></i><span>Venues</span>
                     </a>
                   </li>
                   <li>
-                    <a href="tables-data.html">
-                      <i class="bi bi-card-checklist fs-5"></i><span>Evaluation Criteria</span>
+                    <a href="{{ route('references.criterias') }}">
+                      <i class="bi bi-circle"></i><span>Evaluation Criteria</span>
                     </a>
                   </li>
                 </ul>
@@ -350,22 +350,22 @@
         
               <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-                  <i class="bi bi-clipboard-check-fill fs-4"></i><span>Tests</span><i class="bi bi-chevron-down ms-auto"></i>
+                  <i class="bi bi-bar-chart"></i><span>Tests</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                   <li>
                     <a href="charts-chartjs.html">
-                      <i class="bi bi-clipboard-data-fill fs-5"></i><span>Assessment Tests</span>
+                      <i class="bi bi-circle"></i><span>Assessment Tests</span>
                     </a>
                   </li>
                   <li>
                     <a href="charts-apexcharts.html">
-                      <i class="bi bi-person-fill-gear fs-5"></i><span>Practical Exams</span>
+                      <i class="bi bi-circle"></i><span>Practical Exams</span>
                     </a>
                   </li>
                   <li>
                     <a href="charts-echarts.html">
-                      <i class="bi bi-wechat fs-5"></i><span>Oral Interviews</span>
+                      <i class="bi bi-circle"></i><span>Oral Interviews</span>
                     </a>
                   </li>
                 </ul>
@@ -374,29 +374,29 @@
 
               <li class="nav-item">
                 <a class="nav-link collapsed" href="users-profile.html">
-                  <i class="bi bi-person-check-fill fs-4"></i>
+                  <i class="bi bi-person"></i>
                   <span>Assign Exam</span>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-                  <i class="bi bi-arrow-clockwise fs-4"></i><span>Ongoing Exams</span><i class="bi bi-chevron-down ms-auto"></i>
+                  <i class="bi bi-gem"></i><span>Ongoing Exams</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                   <li>
                     <a href="icons-bootstrap.html">
-                      <i class="bi bi-card-text fs-5"></i><span>Assessment Notes Form</span>
+                      <i class="bi bi-circle"></i><span>Assessment Notes Form</span>
                     </a>
                   </li>
                   <li>
                     <a href="icons-remix.html">
-                      <i class="bi bi-journal-medical fs-5"></i><span>Practical Test Evaluation Form</span>
+                      <i class="bi bi-circle"></i><span>Practical Test Evaluation Form</span>
                     </a>
                   </li>
                   <li>
                     <a href="icons-boxicons.html">
-                      <i class="bi bi-chat-text-fill fs-5"></i><span>Oral Test Evaluation Form</span>
+                      <i class="bi bi-circle"></i><span>Oral Test Evaluation Form</span>
                     </a>
                   </li>
                 </ul>
@@ -406,14 +406,14 @@
         
               <li class="nav-item">
                 <a class="nav-link collapsed" href="users-profile.html">
-                  <i class="bi bi-file-bar-graph-fill fs-4"></i>
+                  <i class="bi bi-person"></i>
                   <span>Reports</span>
                 </a>
               </li><!-- End Reports Page Nav -->
         
               <li class="nav-item">
                 <a class="nav-link collapsed" href="pages-faq.html">
-                  <i class="bi bi-file-earmark-text-fill fs-4"></i>
+                  <i class="bi bi-question-circle"></i>
                   <span>Logs</span>
                 </a>
               </li><!-- End Logs Page Nav -->
