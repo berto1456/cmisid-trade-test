@@ -354,27 +354,29 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.logo {
-  line-height: 1;
-}
-
-@media (min-width: 1200px) {
-  .logo {
-    width: 280px;
-  }
-}
-
+/* Remove the max-height limit and adjust the height of the image */
 .logo img {
-  max-height: 26px;
+  max-height: none; /* Remove max-height */
+  height: 73px; /* Set a fixed height for the logo */
+  width: auto; /* Ensure the width adjusts to maintain the aspect ratio */
   margin-right: 6px;
 }
 
+/* Adjust the width of the logo container on larger screens */
+@media (min-width: 73px) {
+  .logo {
+    width: 280px; /* Adjust this value if necessary */
+  }
+}
+
+/* Optional: Adjust the logo span if you have text next to the logo */
 .logo span {
   font-size: 26px;
   font-weight: 700;
   color: #012970;
   font-family: "Nunito", sans-serif;
 }
+
 
 .header {
   transition: all 0.5s;
